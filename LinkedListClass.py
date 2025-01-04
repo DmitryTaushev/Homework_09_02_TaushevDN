@@ -90,11 +90,11 @@ class LinkedList:
         current_node = self.head
         while current_node:
             if current_node.data == data:
-                return True, current_node
+                return True, current_node.data
             current_node = current_node.next_node
         return False, None
 
-    """Метод замены данных определенного элемента списка по его данным"""
+    """Метод замены данных определенного элемента списка по его позиции"""
     def change_data(self, node_data, change_data):
         current_node = self.head
         current_node_position = 1
