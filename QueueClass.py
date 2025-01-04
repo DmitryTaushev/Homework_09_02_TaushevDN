@@ -47,10 +47,10 @@ class Queue:
             return "Очередь не пуста"
 
     """Метод определения наполненности очереди"""
-    def is_queue_full(self):
+    def isFull(self):
         if self.queue_size == self.get_queue_length():
-            return True
-        return False
+            return 'Очередь полна'
+        return "Очередь не полна"
     """Метод показывающий все элементы очереди"""
     def show_queue(self):
         if not self.isEmpty():
